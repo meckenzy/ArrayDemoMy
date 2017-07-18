@@ -22,28 +22,41 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstFriends = New System.Windows.Forms.ListBox()
+        Me.btnArrayElement = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'lstFriends
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(12, 12)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
-        Me.ListBox1.TabIndex = 0
+        Me.lstFriends.FormattingEnabled = True
+        Me.lstFriends.IntegralHeight = False
+        Me.lstFriends.Location = New System.Drawing.Point(1, 3)
+        Me.lstFriends.Name = "lstFriends"
+        Me.lstFriends.Size = New System.Drawing.Size(163, 258)
+        Me.lstFriends.TabIndex = 0
+        '
+        'btnArrayElement
+        '
+        Me.btnArrayElement.Location = New System.Drawing.Point(170, 3)
+        Me.btnArrayElement.Name = "btnArrayElement"
+        Me.btnArrayElement.Size = New System.Drawing.Size(102, 23)
+        Me.btnArrayElement.TabIndex = 1
+        Me.btnArrayElement.Text = "Array Element"
+        Me.btnArrayElement.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.btnArrayElement)
+        Me.Controls.Add(Me.lstFriends)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstFriends As ListBox
+    Friend WithEvents btnArrayElement As Button
 End Class
